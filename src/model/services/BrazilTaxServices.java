@@ -1,8 +1,7 @@
 package model.services;
 
-public class BrazilTaxServices {
-    
-
+public class BrazilTaxServices implements TaxServices{   
+    @Override
     public double tax(double amount) {
         if(amount <= 100.0){
             return amount * 0.2;
